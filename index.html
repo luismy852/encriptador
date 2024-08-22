@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="header__logo" src="imagenes/logo.png" alt="logo">
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="lado__izquierdo">
+                <textarea name="textohola" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="instruccion">Solo letras minúsculas y sin acentos</p>
+                <div class="botones__contenedor">
+                    <button onclick="obtenerIntento();" class="encriptar__botones">Encriptar</button>
+                    <button onclick="desencriptar();" class="botones__dos">Desencriptar</button>
+                </div>
+            </section>
+            <section class="lado__derecho">
+                <p id="aquielresultado" class="seccion__dos__encriptado">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Orci
+                    montes,
+                    sit et
+                    diam risus scelerisque vitae
+                    est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit.
+                    Libero,
+                    sodales duis fames id diam feugiat aliquet non egestas.</p>
+                <img id="inicio" class="seccion__dos__imagen" src="imagenes/perrolupa2.png" alt="">
+                <h2 id="inicio1" class="seccion__dos__noencriptado">Ningún mensaje fue encontrado</h2>
+                <p id="inicio2" class="seccion__tres__noencriptado">Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+                <button onclick="copiarTexto();" id="botonmostrar" class="botones__tres">Copiar</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Luis Miguel</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

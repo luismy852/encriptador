@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 100px;
+    height: auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lado__izquierdo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.instruccion {
+    padding: 366px 0px 0px;
+}
+
+textarea {
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    width: 680px;
+    height: 288px;
+    border-style: hidden;
+    resize: none;
+}
+
+.encriptar__botones {
+    width: 50%;
+    height: 67px;
+    border-radius: 16px;
+    margin-right: 24px;
+    border: 2px solid #0000;
+    background-color: blue;
+    color: white;
+}
+
+.encriptar__botones:active {
+    transform: scale(0.9);
+}
+
+.lado__derecho {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 944px;
+    background-color: #1E201E;
+    border-radius: 16px;
+    align-items: center;
+    position: relative;
+    top: -128px;
+
+}
+
+.botones__contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.seccion__dos__encriptado {
+    font-size: 24px;
+    width: 336px;
+    height: 781px;
+    padding: 32px 32px 32px 32px;
+    margin: 0;
+}
+
+.seccion__dos__imagen {
+    width: 336px;
+    height: auto;
+    padding: 243px 0px 1px;
+}
+
+.seccion__dos__noencriptado,
+.seccion__tres__noencriptado {
+    text-align: center;
+}
+
+.botones__dos {
+    width: 50%;
+    height: 67px;
+    border-radius: 16px;
+    margin-right: 24px;
+    border: 2px solid blue;
+    background-color: black;
+    color: white;
+}
+
+.botones__dos:active {
+    transform: scale(0.9);
+}
+
+.botones__tres {
+    width: 336px;
+    height: 67px;
+    border-radius: 16px;
+    border: 2px solid blue;
+    background-color: black;
+    color: white;
+}
+
+.botones__tres:active {
+    transform: scale(0.9);
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+}
+
+@media(max-width:1194px) {
+
+
+
+    body {
+        margin-left: 0;
+    }
+
+    .contenedor {
+        flex-direction: column;
+
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .lado__izquierdo {
+        width: 100%;
+    }
+
+    .lado__derecho {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        background-color: #1E201E;
+        border-radius: 16px;
+        align-items: center;
+        position: relative;
+        top: 0px;
+
+    }
+
+    .seccion__dos__imagen {
+        padding: 32px 0px 1px;
+    }
+
+    .instruccion {
+        padding: 0;
+    }
+
+    .encriptar__botones {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .encriptar__botones,
+    .botones__dos {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 5%;
+    }
+
+    .botones__dos {
+        margin-right: 0;
+    }
+
+    .botones__tres {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+
+    .seccion__dos__encriptado {
+        font-size: 24px;
+        width: 93%;
+        height: auto;
+        min-height: 320px;
+        padding: 32px 32px 32px 32px;
+        margin: 32px, 32px, 32px, 32px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    * {
+        margin: 1;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 500px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .ladoderecho,
+    .ladoizquierdo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lado__derecho {
+        width: 100%;
+        height: auto;
+        top: 0;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .seccion__dos__encriptado {
+        font-size: 24px;
+        width: 93%;
+        height: auto;
+        padding: 32px 32px 32px 32px;
+        margin: 32px, 32px, 32px, 32px;
+
+    }
+
+    .seccion__dos__imagen {
+        display: none;
+    }
+
+
+
+    .encriptar__botones,
+    .botones__dos {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 5%;
+    }
+
+    .botones__dos {
+        margin-right: 0;
+    }
+
+
+    .botones__tres {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+
+    .seccion__dos__noencriptado {
+        margin-top: 32px;
+    }
+
+    .seccion__tres__noencriptado {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 412px) {
+    .botones__contenedor {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .encriptar__botones {
+        margin-right: 0;
+    }
+
+    .botones__dos {
+        margin-left: 0;
+    }
+
+    .instruccion {
+        padding: 0;
+    }
+
+    textarea {
+        height: 500px;
+    }
+
+    .seccion__dos__encriptado {
+        width: 85%;
+    }
+}
